@@ -2,24 +2,70 @@
 
     width: 70%;
     flex-grow: 1;
-    
-        
+
 }
 .main {
     
     border: 1px solid yellow;
-    height: 500px;
+    height: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 
 }
 
-
 .hero {
 
+    height: 30%;
+    width: 500px;
+    margin: 10px;
     border: 1px solid blue;
-    padding:20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center
+    display:inline-block;
+    
+}
 
-};
+.heroTitle {
+
+    border: 1px solid violet;
+    margin: 10px;
+    height: 15%;
+    line-height: 30px;
+
+}
+
+.heroContent {
+
+    border: 1px solid red;
+    margin: 10px;
+    height: 65%
+    
+}
+
+.gallery {
+
+    height: 60%;
+    width: 100%;
+    margin: 10px;
+    border: 1px solid white;
+    display:inline-block;
+    
+}
+
+.galleryTitle {
+
+    border: 1px solid violet;
+    margin: 10px;
+    height: 10%;
+    line-height: 35px;
+
+}
+
+.galleryContent {
+
+    border: 1px solid red;
+    margin: 10px;
+    height: 80%
+    
+}
 

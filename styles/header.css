@@ -19,13 +19,14 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
 }
 
 .navLogo img {
     
     border: 1px solid black;
-    max-height: 100px;
-    min-height: 50px;
+    max-height: 60px;
+    min-height: 30px;
     width: auto;
     
 }
@@ -46,9 +47,9 @@
 .navItem {
     
     border: 1px solid black;
-    height: 50px;
+    height: 30px;
     width: 220px;
-    line-height: 50px;
+    line-height: 30px;
     flex-grow: 1;
     flex-basis: 220px;
     text-align: center;
