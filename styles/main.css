@@ -1,7 +1,25 @@
+#main {
+
+    width: 70%;
+    flex-grow: 1;
+    
+        
+}
 .main {
     
-    border: 1px solid black;
+    border: 1px solid yellow;
     height: 500px;
-    width: 69%;
 
 }
+
+
+.hero {
+
+    border: 1px solid blue;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+
+};
+

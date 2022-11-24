@@ -1,5 +1,23 @@
+#aside {
+
+    width: 30%;
+    flex-grow: 1;
+    flex-basis: 200px;
+
+}
+
 .aside {
     border: 1px solid black;
     height: 500px;
-    width: 29%;
+    
+    
+}
+
+@media screen and (max-width: 760px) {
+    #aside {
+        order: 0;
+    }
+    #main {
+        order: 1;
+    }
 }

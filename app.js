@@ -6,8 +6,10 @@ import { setupFooter } from './components/footer.js'
 
 document.querySelector(`#app`).innerHTML += `
     <header id="header"></header>
-    <main id="main"></main>
-    <aside id="aside"></aside>
+    <div id="center">
+        <main id="main"></main>
+        <aside id="aside"></aside>
+    </div>
     <footer id="footer"></footer>
 `
 
