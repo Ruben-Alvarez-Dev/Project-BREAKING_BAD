@@ -1,0 +1,56 @@
+#header {
+
+    width: 100%;
+}
+
+.header {
+    
+    
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    
+}
+
+.navLogo {
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navLogo img {
+    
+    border: 1px solid black;
+    max-height: 100px;
+    min-height: 50px;
+    width: auto;
+    
+}
+
+@media screen and (max-width: 800px) {
+    div.navLogo img{
+    display: none;
+    }
+    }
+
+
+.navItemsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+}
+.navItem {
+    
+    border: 1px solid black;
+    height: 50px;
+    width: 240px;
+    line-height: 50px;
+    flex-grow: 1;
+    flex-basis: 240px;
+    
+}
