@@ -9,7 +9,7 @@ export function setupMain(element) {
     </div>
     <div id="gallery" class="gallery">
         <div class="galleryTitle">Gallery Title</div>
-        <div class="galleryContent">Gallery Content</div>
+        <div id="galleryDisplay" class="galleryContent"></div>
     </div>
   </div>
   `

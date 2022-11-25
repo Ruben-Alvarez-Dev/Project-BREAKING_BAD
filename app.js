@@ -17,3 +17,41 @@ setupHeader(document.querySelector('#header'));
 setupMain(document.querySelector('#main'));
 setupAside(document.querySelector('#aside'));
 setupFooter(document.querySelector('#footer'));
+
+
+const baseUrl = `https://www.breakingbadapi.com/api/`;
+const endpointCharacters = `characters`;
+const endpointEpisodes = `episodes`;
+const endpointQuotes = `quotes`;
+const endpointDeaths = `deaths`;
+
+let data;
+
+const getData = async (endpoint) => {
+    const response = await fetch(baseUrl + endpoint);
+    const dataJson = await response.json();
+    data = dataJson
+    printData(data)
+}
+
+const printData = (param) => {
+
+    const display = document.querySelector(`#galleryDisplay`);
+    
+    param.forEach(element => {
+    
+        const template = `
+            <div class="galleryItem">
+                <span>${element.nickname}</span>
+                <p><img height=80px width=80px src="${element.img}"></p>
+            </div>`;
+
+            display.innerHTML += template;
+
+
+    });
+
+    
+}
+
+getData (endpointCharacters);
