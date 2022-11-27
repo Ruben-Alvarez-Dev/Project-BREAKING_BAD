@@ -55,3 +55,9 @@
     text-align: center;
     
 }
+
+.navItem button {
+    width: 100%;
+    height: 100%;
+    
+}
