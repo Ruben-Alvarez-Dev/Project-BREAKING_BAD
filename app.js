@@ -26,9 +26,9 @@ function initNav () {
     const nav_bb = document.querySelector(`#nav_bb`);
     const nav_bcs = document.querySelector(`#nav_bcs`);
     
-    nav_all.addEventListener("click", () => {initData(urlAll)});
-    nav_bb.addEventListener("click", () => {initData(urlBb)});
-    nav_bcs.addEventListener("click", () => {initData(urlBcs)});
+    nav_all.addEventListener("click", () => {initData(urlAll, "All Characters")});
+    nav_bb.addEventListener("click", () => {initData(urlBb, "Breaking Bad Characters")});
+    nav_bcs.addEventListener("click", () => {initData(urlBcs, "Better Call Saul Characters")});
 }
 
 
@@ -37,5 +37,5 @@ function initNav () {
 
 initComponents();
 initNav();
-initData (urlAll);
+initData (urlAll,  "All Characters");
 

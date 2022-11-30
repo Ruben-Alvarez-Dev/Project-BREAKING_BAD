@@ -26,6 +26,18 @@
   }
 }
 
+.aside2 {
+
+  display: flex;
+  justify-content: center;
+  
+}
+
+.aside2Item {
+  margin: 6px;
+
+}
+
 .asideTitle {
   border: 1px solid violet;
   margin: 10px;
@@ -37,4 +49,6 @@
   border: 1px solid red;
   margin: 10px;
   height: 41%;
+  display: block;
+  flex-direction: column wrap;;
 }

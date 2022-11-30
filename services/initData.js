@@ -1,19 +1,19 @@
-export const initData = (url) => {
-  getData(url);
+export const initData = (url, title) => {
+  getData(url, title);
 }
 
-const getData = async (url) => {
+const getData = async (url, title) => {
   try {
   	  const response = await fetch(url);
 	    const array = await response.json();
       // printData(array)
-      clearBrokens(array);
+      clearBrokens(array, title);
   } catch (error) {
       console.log(error);
   }
 }
 
-const clearBrokens = (array) => {
+const clearBrokens = (array, title) => {
   array.forEach(element => {
     if (element.nickname == "Holly") {
         element.img = `https://www.cidob.org/dass-2019041701/var/plain/storage/images/new_site/biografias_lideres_politicos/america_del_norte/estados_unidos/donald_trump/1993720-58-esl-ES/donald_trump_biography.jpg`
@@ -23,11 +23,15 @@ const clearBrokens = (array) => {
         element.img = `https://static.posters.cz/image/1300/art-photo/the-lord-of-the-rings-gandalf-i132723.jpg`
     }
   });
-  printData(array);
+
+  printData(array, title);
 }
 
-const printData = (mappedArray) => {
+const printData = (mappedArray, title) => {
+  
   const galleryContent = document.querySelector(`.galleryContent`);
+  const galleryTitle = document.querySelector(`.galleryTitle`);
+  galleryTitle.innerHTML = title;
   galleryContent.innerHTML = ``;
   mappedArray.forEach(element => {
     const galleryContent = document.querySelector(`.galleryContent`);
