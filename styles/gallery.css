@@ -1,0 +1,43 @@
+.gallery {
+  height: 50%;
+  width: 100%;
+  margin: 10px;
+  border: 1px solid white;
+  display: inline-block;
+}
+
+.galleryTitle {
+  border: 1px solid violet;
+  margin: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.galleryContent {
+  border: 1px solid red;
+  margin: 10px;
+  height: 81%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.galleryItem {
+  height: 130px;
+  width: 100px;
+  border: 1px solid blue;
+  margin: 5px;
+  
+}
+
+.galleryItem img {
+  min-width: 50px;
+  max-width: 50px;
+  height: auto;
+  
+}
+
+.galleryItemButton {
+  
+}

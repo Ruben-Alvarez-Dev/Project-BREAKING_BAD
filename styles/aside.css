@@ -1,50 +1,40 @@
 #aside {
-
-    width: 30%;
-    flex-grow: 1;
-    flex-basis: 200px;
-
+  width: 30%;
+  flex-grow: 1;
+  flex-basis: 200px;
 }
 
 .aside {
-    border: 3px solid cyan;
-    height: 99%;
-    display:
-    block;
-    
+  border: 3px solid cyan;
+  height: 99%;
+  display: block;
 }
 
 @media screen and (max-width: 760px) {
-    #aside {
-        order: 0;
-        height: 50%;
-    }
-    #main {
-        order: 1;
-    }
-    .asideTitle {
-        display:none;
-    }
-    .asideTool {
-        height: 20%;
-    }
+  #aside {
+    order: 0;
+    height: 50%;
+  }
+  #main {
+    order: 1;
+  }
+  .asideTitle {
+    display: none;
+  }
+  .asideTool {
+    height: 20%;
+  }
 }
 
-
 .asideTitle {
-
-    border: 1px solid violet;
-    margin: 10px;
-    height: 10%;
-    line-height: 60px;
-
+  border: 1px solid violet;
+  margin: 10px;
+  height: 10%;
+  line-height: 60px;
 }
 
 .asideTool {
-
-    border: 1px solid red;
-    margin: 10px;
-    height: 41%
-    
+  border: 1px solid red;
+  margin: 10px;
+  height: 41%;
 }
-

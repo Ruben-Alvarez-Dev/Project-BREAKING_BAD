@@ -1,7 +1,12 @@
 import './style.css'
-import { initComponents } from './services/initComponents.js'
+import './style.css'
+import './style.css'
+import { initComponents } from './services/initComponents.js';
 import { initData } from './services/initData.js';
 
+
+// DECLARACIONES
+// ---------------------------------------------------
 
 const baseUrl = `https://www.breakingbadapi.com/api/`;
 const endpointCharacters = `characters`;
@@ -9,7 +14,16 @@ const endpointEpisodes = `episodes`;
 const endpointQuotes = `quotes`;
 const endpointDeaths = `deaths`;
 
-initComponents ();
-initData (baseUrl + endpointCharacters);
+let url = baseUrl + endpointCharacters;
 
-// const heroTitle = document.querySelector(`.heroTitle`);
+let mappedData;
+let data;
+let array;
+
+
+// INICIALIZO COMPONENTES
+// ----------------------------------------------------
+
+initComponents ();
+initData (url);
+
