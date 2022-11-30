@@ -1,3 +1,4 @@
+import { initData } from "../services/initData";
 import "../styles/header.css";
 export function setupHeader(element) {
     
@@ -7,12 +8,17 @@ export function setupHeader(element) {
         <div class="navItemsContainer">
             
             <div class="navItem">
-                <button>Characters</button>
+                <button id="nav_all">All Characters</button>
             </div>
             
-            <div class="navItem">Episodes</div>
-            <div class="navItem">Quotes</div>
-            <div class="navItem">Deaths</div>
+            <div class="navItem">
+                <button id="nav_bb">Breaking Bad</button>
+            </div>
+            
+            <div class="navItem">
+                <button id="nav_bcs">Better Call Saul</button>
+            </div>
+            
         </div>
         
     </div>

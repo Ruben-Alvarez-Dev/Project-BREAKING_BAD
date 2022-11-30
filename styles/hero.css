@@ -1,5 +1,5 @@
 .hero {
-  height: 44%;
+  height: 45%;
   max-width: 700px;
   min-width: 370px;
   margin: 10px;
@@ -8,18 +8,24 @@
   display: flex;
   align-items: center;
   
+
+  
 }
 
 .heroTitle {
   border: 1px solid violet;
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   height: 30px;
   line-height: 30px;
 }
 
 .heroContent {
   border: 1px solid red;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
   min-width: 290px;
   max-width: 800px;
 

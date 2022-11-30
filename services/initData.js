@@ -1,4 +1,3 @@
-
 export const initData = (url) => {
   getData(url);
 }
@@ -28,6 +27,8 @@ const clearBrokens = (array) => {
 }
 
 const printData = (mappedArray) => {
+  const galleryContent = document.querySelector(`.galleryContent`);
+  galleryContent.innerHTML = ``;
   mappedArray.forEach(element => {
     const galleryContent = document.querySelector(`.galleryContent`);
     const galleryCard = ` 
@@ -44,6 +45,7 @@ const putListeners = (mappedArray) => {
   mappedArray.forEach(element => {
     document.querySelector(`#btn${element.char_id}`).addEventListener("click", () => {printHero(element)})
   })
+  printHero(mappedArray[0])
 }
 
 const printHero = (fullActiveElement) => {
@@ -56,10 +58,13 @@ const printHero = (fullActiveElement) => {
 
         <div class="heroContent">
             <div class="heroText">
-                ${fullActiveElement.name}<br>
-                ${fullActiveElement.occupation}<br>
-                ${fullActiveElement.seassons}<br>
-                ${fullActiveElement.birthday}<br>
+                Name: ${fullActiveElement.name}<br>
+                Actor/Actress: ${fullActiveElement.portrayed}<br>
+                Birthdate: ${fullActiveElement.birthday}<br>
+                Occupation: ${fullActiveElement.occupation}<br>
+                Series: ${fullActiveElement.category}<br>
+                Status: ${fullActiveElement.status}<br>
+                
             </div><br>
             <div class="heroImg">
                   <img src="${fullActiveElement.img}">

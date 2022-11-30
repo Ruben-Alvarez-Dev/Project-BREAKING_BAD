@@ -25,3 +25,4 @@ export const initComponents = () => {
   setupAside(document.querySelector("#aside"));
   setupFooter(document.querySelector("#footer"));
 };
+
