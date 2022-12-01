@@ -23,9 +23,21 @@ const clearBrokens = (array, title) => {
         element.img = `https://static.posters.cz/image/1300/art-photo/the-lord-of-the-rings-gandalf-i132723.jpg`
     }
   });
+  // printData(array, title);
+  filterData(array, title);
+}
+
+const filterData = (array, title) => {
+
+  const filtered1 = array.filter(elem => elem.status == "Deceased");
+  array.forEach(valor => {
+    // console.log(valor.status)
+  })
 
   printData(array, title);
 }
+
+
 
 const printData = (mappedArray, title) => {
   

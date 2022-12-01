@@ -41,14 +41,14 @@
 .asideTitle {
   border: 1px solid violet;
   margin: 10px;
-  height: 10%;
-  line-height: 60px;
+  height: 16%;
+  line-height: 110px;
 }
 
 .asideTool {
   border: 1px solid red;
   margin: 10px;
-  height: 41%;
+  height: 38.5%;
   display: block;
   flex-direction: column wrap;;
 }
